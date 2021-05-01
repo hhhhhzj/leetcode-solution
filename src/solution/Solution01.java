@@ -1,3 +1,5 @@
+package solution;
+
 import java.util.Arrays;
 
 //Given an array of integers nums and an integer target, return indices of the t
@@ -47,7 +49,7 @@ import java.util.Arrays;
 //leetcode submit region begin(Prohibit modification and deletion)
 
 /**
- * @author huangzhijian
+ * @author Zhijian.H
  * @since 2021/4/28 下午10:15
  */
 public class Solution01 {
