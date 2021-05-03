@@ -1,4 +1,6 @@
 package solution;
+
+import java.util.*;
 //The string "PAYPALISHIRING" is written in a zigzag pattern on a given number o
 //f rows like this: (you may want to display this pattern in a fixed font for bett
 //er legibility)
@@ -64,6 +66,40 @@ package solution;
 public class Solution06 {
 
     public String convert(String s, int numRows) {
-        return null;
+
+        if (numRows == 1) {
+            return s;
+        }
+
+        List<StringBuffer> rows = new ArrayList<StringBuffer>();
+        for(int i = 0; i < Math.min(numRows, s.length()); i++) {
+            rows.add(new StringBuffer());
+        }
+
+        int curRow = 0;
+        boolean goingDown = false;
+
+        for (char c : s.toCharArray()) {
+            rows.get(curRow).append(c);
+
+            if (curRow == 0 || curRow == numRows - 1) {
+                goingDown = !goingDown;
+            }
+
+            curRow += goingDown ? 1 : -1;
+        }
+
+        StringBuilder ret = new StringBuilder();
+        for (StringBuffer row : rows) {
+            ret.append(row);
+        }
+        return ret.toString();
+    }
+
+    public static void main(String[] args) {
+        Solution06 solution06 = new Solution06();
+        System.out.println(solution06.convert("PAYPALISHIRING", 3));
+        System.out.println(solution06.convert("PAYPALISHIRING", 4));
+        System.out.println(solution06.convert("A", 1));
     }
 }
