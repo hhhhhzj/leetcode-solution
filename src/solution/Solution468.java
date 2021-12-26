@@ -150,11 +150,11 @@ public class Solution468 {
     }
 
     public static void main(String[] args) {
-        Solution468 solition = new Solution468();
-        System.out.println(solition.validIPAddress("172.16.254.1"));
-        System.out.println(solition.validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334"));
-        System.out.println(solition.validIPAddress("256.256.256.256"));
-        System.out.println(solition.validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334:"));
-        System.out.println(solition.validIPAddress("1e1.4.5.6"));
+        Solution468 solution = new Solution468();
+        System.out.println(solution.validIPAddress("172.16.254.1"));
+        System.out.println(solution.validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334"));
+        System.out.println(solution.validIPAddress("256.256.256.256"));
+        System.out.println(solution.validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334:"));
+        System.out.println(solution.validIPAddress("1e1.4.5.6"));
     }
 }

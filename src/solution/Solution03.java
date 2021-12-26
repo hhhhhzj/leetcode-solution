@@ -77,5 +77,6 @@ public class Solution03 {
     public static void main(String[] args) {
         Solution03 solution = new Solution03();
         System.out.println(solution.lengthOfLongestSubstring("abcabcbb"));
+        System.out.println(solution.lengthOfLongestSubstring("fabcbcbb"));
     }
 }
