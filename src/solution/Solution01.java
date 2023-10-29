@@ -1,7 +1,5 @@
 package solution;
 
-import java.util.Arrays;
-
 //Given an array of integers nums and an integer target, return indices of the t
 //wo numbers such that they add up to target.
 //
@@ -48,6 +46,8 @@ import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
+import java.util.Arrays;
+
 /**
  * @author Zhijian.H
  * @since 2021/4/28 下午10:15
@@ -73,8 +73,8 @@ public class Solution01 {
 
     public static void main(String[] args) {
         Solution01 solution = new Solution01();
-        System.out.println(Arrays.toString(solution.twoSum(new int[]{2,7,11,15}, 9)));
-        System.out.println(Arrays.toString(solution.twoSum(new int[]{3,2,4}, 6)));
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{2, 7, 11, 15}, 9)));
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{3, 2, 4}, 6)));
         System.out.println(Arrays.toString(solution.twoSum(new int[]{3, 3}, 6)));
     }
 }

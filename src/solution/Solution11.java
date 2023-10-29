@@ -51,7 +51,7 @@ package solution;
 // 👍 9556 👎 718
 
 
-import com.sun.tools.javac.util.Assert;
+//import com.sun.tools.javac.util.Assert;
 
 /**
  * @author Zhijian.H
@@ -79,13 +79,13 @@ public class Solution11 {
         return maxArea;
     }
 
-    public static void main(String[] args) {
-        Solution11 solution11 = new Solution11();
-        int[] height = new int[]{1,8,6,2,5,4,8,3,7};
-        Assert.check(solution11.maxArea(height) == 49);
-
-        height = new int[]{2,3,4,5,18,17,6};
-        Assert.check(solution11.maxArea(height) == 17);
-    }
+//    public static void main(String[] args) {
+//        Solution11 solution11 = new Solution11();
+//        int[] height = new int[]{1,8,6,2,5,4,8,3,7};
+//        Assert.check(solution11.maxArea(height) == 49);
+//
+//        height = new int[]{2,3,4,5,18,17,6};
+//        Assert.check(solution11.maxArea(height) == 17);
+//    }
 
 }
